@@ -4,17 +4,34 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Fawwaz Musytaqul Umam - Portfolio</title>
-		<link rel="stylesheet" href="./assets/css/style.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Poppins&family=Rubik+Mono+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
 	</head>
 	<body>
-		<header class="app-bar">
-			<div class="app-bar-logo">
-				<img src="" alt="logo" title="Fawwaz M umam" />
+		<header class="appbar">
+			<div class="appbar-logo">
+				<span class="logo-name"><a tabindex="-1" href="/">Fawwaz</a></span>
 			</div>
-			<button id="menuButton" class="menu-button" aria-label="Navigation Menu">≡</button>
+
+			<button
+				id="menuButton"
+				class="menu-button"
+				aria-label="Navigation Menu"
+				onclick="alert('yeah')"
+			>
+				≡
+			</button>
+
 			<nav id="drawer" class="nav">
 				<ul class="nav-list">
-					<li class="nav-list-item"><a href="#home">home</a></li>
+					<li class="nav-list-item"><a href="#home">Home</a></li>
 					<li class="nav-list-item"><a href="#about">About</a></li>
 					<li class="nav-list-item"><a href="#project">Project</a></li>
 					<li class="nav-list-item"><a href="#">Blog</a></li>
@@ -23,54 +40,63 @@
 			</nav>
 		</header>
 
-		<section class="hero" id="home">
-			<div>
-				<span class="greeting">Hello, I'm</span>
-				<h1 class="name">Fawwaz Musytaqul Umam</h1>
-				<span class="job">FrontEnd Web Developer</span>
-	
-				<p>Building Impressive Web Experiences for the Digital Future.</p>
-			</div>
+		<main>
+			<section class="home" id="home">
+				<div class="content">
+					<span class="greeting">Assalamualaikum, I'm</span>
+					<h1 class="name">Fawwaz Musytaqul Umam</h1>
+					<span class="job">FrontEnd Web Developer</span>
 
-			<aside class="profile-photo">
-				<img src="./assets/images/fawwaz.png" alt="Fawwaz" />
-			</aside>
-		</section>
-
-		<section id="about">
-			<h1>-About me-</h1>
-			<div class="about-wrapper">
-				<section class="about-info">
-					<div>
-						<img src="" alt="">
-					</div>
-					<div>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nulla delectus
-							nam voluptatum possimus rem suscipit veritatis velit tenetur a sapiente repellat, aut
-							in ad cum quos cumque. Quo, veniam!
-						</p>
-		
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere in hic veritatis voluptates provident saepe explicabo. Sequi rem facilis voluptas vitae illo, eveniet aperiam, voluptatum sed tenetur, quae consectetur porro.
-						</p>
-					</div>
-				</section>
-				
-				<section class="skills"></section>
-			</div>
-		</section>
-
-		<section id="project">
-			<h1>-My Project-</h1>
-			<div class="project-wrapper">
-				<div class="project-card">
-
+					<p>
+						Welcome to the realm of digital creativity! I am a passionate Frontend Developer
+						based in Indonesia, crafting stunning and responsive web designs. Explore
+						unforgettable online experiences through my innovative works. Enjoy your journey!
+					</p>
 				</div>
-			</div>
-		</section>
 
-		<section id="contact"></section>
+				<div class="profile-picture-container">
+					<div class="elipse"></div>
+					<div class="profile-picture"></div>
+				</div>
+				<div class="rectangle-shape"></div>
+			</section>
+
+			<section id="project">
+				<h1>Project</h1>
+				<div class="project-content">
+					<div class="project-card"></div>
+				</div>
+			</section>
+
+			<section id="about">
+				<h1>About me</h1>
+				<div class="about-content">
+					<section class="about-info">
+						<div>
+							<img src="" alt="" />
+						</div>
+						<div>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+								nulla delectus nam voluptatum possimus rem suscipit veritatis velit
+								tenetur a sapiente repellat, aut in ad cum quos cumque. Quo, veniam!
+							</p>
+
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere in hic
+								veritatis voluptates provident saepe explicabo. Sequi rem facilis
+								voluptas vitae illo, eveniet aperiam, voluptatum sed tenetur, quae
+								consectetur porro.
+							</p>
+						</div>
+					</section>
+
+					<section class="skills"></section>
+				</div>
+			</section>
+
+			<section id="contact"></section>
+		</main>
 
 		<footer></footer>
 	</body>

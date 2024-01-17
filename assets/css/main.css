@@ -1,0 +1,204 @@
+:root {
+	--background-color: #686866;
+	--section-background: #aeb0b0;
+	--text-color: #fffdfd;
+	--text-color2: #4f5154;
+	--main-font: 'Poppins', sans-serif;
+	--logo-font: 'Jockey One', sans-serif;
+	--heading-font: 'Rubik Mono One', monospace;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	color: var(--text-color);
+	font-family: var(--main-font);
+	background-color: var(--background-color);
+}
+
+a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+/*
+	App Bar (header)
+*/
+
+.appbar {
+	left: 0;
+	right: 0;
+	top: 0;
+	position: absolute;
+	height: 60px;
+	padding: 0 43px;
+	display: grid;
+	grid-template-columns: 100px 1fr 250px;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+}
+
+.appbar .logo-name {
+	font-size: 1.5em;
+	font-family: var(--logo-font);
+}
+
+/* 
+	appbar -> navigagation bar
+*/
+
+.nav-list {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	cursor: default;
+}
+
+.nav-list-item {
+	width: 75px;
+	height: 100%;
+	list-style: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.nav-list-item a {
+	position: relative;
+	font-family: var(--logo-font);
+	letter-spacing: 1px;
+	font-size: 1.1em;
+	transition: 0.2s;
+}
+
+.nav-list-item a:hover {
+	opacity: .8;
+}
+
+.nav-list-item a::before {
+	content: '';
+	bottom: -3px;
+	left: -3px;
+	width: 0;
+	position: absolute;
+	background-color: var(--text-color);
+	transition: 0.3s;
+	z-index: -1;
+}
+
+.nav-list-item a:hover::before {
+	width: 120%;
+	height: 3px;
+}
+
+.menu-button {
+	padding-block: 0;
+	padding-inline: 0;
+	display: block;
+	font-size: 3em;
+	color: var(--text-color);
+	text-align: end;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: none;
+}
+
+/* main */
+
+main {
+	padding-inline: 50px;
+}
+
+/* home section */
+
+.home {
+	margin-block: 60px;
+	min-height: calc(100vh - 60px);
+	display: grid;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.rectangle-shape {
+	position: absolute;
+	height: calc(100vh + 100px);
+	right: 0px;
+	top: -50px;
+
+	background: #aeb0b0;
+	box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.3);
+	border-end-start-radius: 100%;
+	z-index: 1;
+}
+
+/*
+	home sect -> content
+*/
+
+.home .content .job {
+	font-family: 'Courier New', Courier, monospace;
+	color: #a1a1a1;
+}
+
+.content .greeting {
+	color: var(--text-color);
+	font-size: 1.2em;
+}
+
+.content .name {
+	width: fit-content;
+	font-size: 1.9em;
+	margin: 0;
+}
+
+.content .job {
+	margin-bottom: 25px;
+	display: block;
+}
+
+.content p {
+	margin: 0;
+}
+
+/*
+	home sect -> profile picture
+*/
+
+.profile-picture-container {
+	position: relative;
+	width: 380px;
+	height: calc(380px + 98px);
+	z-index: 3;
+}
+
+.profile-picture-container .elipse {
+	top: 95px;
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 94px);
+
+	background: #d9d9d9;
+	box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.5);
+	border: 13px solid #4f5154;
+	border-radius: 262.5px;
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+.profile-picture-container .profile-picture {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-image: url(../images/profile.png);
+	background-position: center;
+	background-size: cover;
+	border-radius: 262.5px;
+	z-index: 3;
+}
